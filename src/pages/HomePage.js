@@ -21,6 +21,9 @@ const HomePage = () => {
 						</Col>
 					</Row>
 				</center>
+				<br />
+				<br />
+				<br />
 				<ContactUsForm />
 			</Container>
 		</div>

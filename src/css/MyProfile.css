@@ -1,4 +1,14 @@
+.round__corners__right {
+	border-radius: 0px 30px 30px 0px;
+}
+
 @media screen and (max-width: 768px) {
+	.profile__heading {
+		width: 30% !important;
+	}
+	.update__profile__heading {
+		width: 60% !important;
+	}
 	.user__name {
 		text-align: center;
 	}
@@ -10,6 +20,12 @@
 	}
 }
 @media screen and (max-width: 320px) {
+	.profile__heading {
+		width: 40% !important;
+	}
+	.update__profile__heading {
+		width: 80% !important;
+	}
 	.data__card {
 		width: 7rem !important;
 	}
