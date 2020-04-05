@@ -1,0 +1,30 @@
+.min__height__60 {
+	min-height: 30px !important;
+}
+
+@media screen and (max-width: 768px) {
+	.custom__icon__bg {
+		height: 70px !important;
+		width: 70px !important;
+	}
+	.min__height__60 {
+		min-height: 60px !important;
+	}
+	.custom__icon {
+		height: 70px !important;
+		width: 70px !important;
+	}
+}
+@media screen and (max-width: 360px) {
+	.min__height__60 {
+		min-height: 80px !important;
+	}
+}
+@media screen and (max-width: 320px) {
+	.landing__bg {
+		height: 360px !important;
+	}
+	.min__height__60 {
+		min-height: 80px !important;
+	}
+}
