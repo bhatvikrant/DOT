@@ -17,25 +17,21 @@ const sideDrawer = (props) => {
 					<Link to='/about'>About Us</Link>
 				</li>
 				<li>
-					<Link to='/how-it-works'>How It Works</Link>
+					<Link to='/how-it-works'>Fairs</Link>
 				</li>
 				<li>
-					<Link to='/hiring'>We Are Hiring</Link>
+					<Link to='/hiring'>Bookmarks</Link>
 				</li>
 				<li>
-					<a
-						href='https://blog.coox.in'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
+					<a href='' target='_blank' rel='noopener noreferrer'>
 						Blog
 					</a>
 				</li>
 				<li>
-					<Link to='/'>Book a Cook</Link>
+					<Link to='/'>Contact Us</Link>
 				</li>
 				<li>
-					<Link to='/register-as-cook'>Register as Cook</Link>
+					<Link to='/register-as-cook'>Login</Link>
 				</li>
 				{/* <li>
 					<LoginModal state={props.loginState} setState={props.setLoginState} />

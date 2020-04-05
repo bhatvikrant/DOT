@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../css/primaryColors.css';
 import { Carousel, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -15,7 +16,9 @@ const UpcomingFairs = () => {
 			<br />
 			<Row>
 				<Col>
-					<h6 className='badge-info p-2 rounded'>Upcoming Fairs</h6>
+					<h6 className='badge-info p-2 rounded primaryBlueColor'>
+						Upcoming Fairs
+					</h6>
 				</Col>
 			</Row>
 			<Row>

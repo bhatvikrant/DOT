@@ -3,6 +3,7 @@ import React from 'react';
 // import LoginModal from '../../../LoginModal';
 
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
+import logo from '../../../../assets/logoBGBlue.png';
 import './Toolbar.css';
 
 import { Link, NavLink } from 'react-router-dom';
@@ -14,7 +15,7 @@ const toolbar = (props) => {
 			<nav className='toolbar__navigation'>
 				<div className='toolbar__logo'>
 					<Link to='/'>
-						{/* <img src={logo} alt='logo' height='50' width='50' /> */}
+						<img src={logo} alt='logo' height='80' width='80' />
 					</Link>
 				</div>
 				<div className='toolbar__logo'>
@@ -30,12 +31,12 @@ const toolbar = (props) => {
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to='/how-it-works' activeClassName='selected'>
+							<NavLink to='/all-fairs' activeClassName='selected'>
 								Fairs
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to='/hiring' activeClassName='selected'>
+							<NavLink to='/bookmarks' activeClassName='selected'>
 								Bookmarks
 							</NavLink>
 						</li>

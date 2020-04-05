@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/primaryColors.css';
 
 import { SocialIcon } from 'react-social-icons';
 import { Row, Col } from 'react-bootstrap';
@@ -7,7 +8,10 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	return (
-		<footer className='text-center p-4' style={{ backgroundColor: '#2c3e50' }}>
+		<footer
+			className='text-center p-4 primaryBlueColor'
+			// style={{ backgroundColor: '#2c3e50' }}
+		>
 			<Row>
 				<Col md={4}>
 					<center>

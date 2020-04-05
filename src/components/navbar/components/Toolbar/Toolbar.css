@@ -22,8 +22,7 @@
 .toolbar__logo a {
 	color: rgba(0, 0, 0, 0.5);
 	font-weight: 700;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-		'Lucida Sans', Arial, sans-serif;
+
 	text-decoration: none !important;
 	font-size: 30px;
 	color: #f0c600;
@@ -38,8 +37,7 @@
 
 .logoName {
 	font-weight: 700;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-		'Lucida Sans', Arial, sans-serif;
+
 	text-decoration: none !important;
 	font-size: 30px;
 	color: #f0c600;
@@ -64,8 +62,6 @@
 .toolbar_navigation-items li {
 	padding: 0 0.5rem;
 	font-weight: 400;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-		'Lucida Sans', Arial, sans-serif;
 }
 
 .toolbar_navigation-items a {
@@ -75,7 +71,7 @@
 
 .toolbar_navigation-items a:hover,
 .toolbar_navigation-items a:active {
-	color: #666666;
+	/* color: #ffb800; */
 }
 
 .selected {
