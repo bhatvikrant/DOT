@@ -1,4 +1,6 @@
 import React from 'react';
+import logo from '../../../../assets/logoBGBlue.png';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import './SideDrawer.css';
 // import LoginModal from '../../../LoginModal';
@@ -12,15 +14,23 @@ const sideDrawer = (props) => {
 	}
 	return (
 		<nav className={drawerClasses}>
+			<Container>
+				<Row>
+					<Col align='center'>
+						<img src={logo} alt='logo' height='180' width='180' />
+						<h6>Digitally Optimized Trade Fairs.</h6>
+					</Col>
+				</Row>
+			</Container>
 			<ul>
 				<li>
 					<Link to='/about'>About Us</Link>
 				</li>
 				<li>
-					<Link to='/how-it-works'>Fairs</Link>
+					<Link to='/all-fairs'>Fairs</Link>
 				</li>
 				<li>
-					<Link to='/hiring'>Bookmarks</Link>
+					<Link to='/bookmarks'>Bookmarks</Link>
 				</li>
 				<li>
 					<a href='' target='_blank' rel='noopener noreferrer'>
