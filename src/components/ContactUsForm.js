@@ -36,16 +36,6 @@ const ContactUsForm = () => {
 				</Row>
 				<Row>
 					<Col md={4}>
-						<h6>Location</h6>
-					</Col>
-					<Col md={8}>
-						<div className='form-group'>
-							<input placeholder='Location' className='form-control' />
-						</div>
-					</Col>
-				</Row>
-				<Row>
-					<Col md={4}>
 						<h6>Mobile</h6>
 					</Col>
 					<Col md={8}>
@@ -54,33 +44,14 @@ const ContactUsForm = () => {
 						</div>
 					</Col>
 				</Row>
+
 				<Row>
 					<Col md={4}>
-						<h6>Company</h6>
+						<h6>Message</h6>
 					</Col>
 					<Col md={8}>
 						<div className='form-group'>
-							<input placeholder='Company' className='form-control' />
-						</div>
-					</Col>
-				</Row>
-				<Row>
-					<Col md={4}>
-						<h6>Designation</h6>
-					</Col>
-					<Col md={8}>
-						<div className='form-group'>
-							<input placeholder='Designation' className='form-control' />
-						</div>
-					</Col>
-				</Row>
-				<Row>
-					<Col md={4}>
-						<h6>About</h6>
-					</Col>
-					<Col md={8}>
-						<div className='form-group'>
-							<textarea placeholder='About' className='form-control' />
+							<textarea placeholder='Message' className='form-control' />
 						</div>
 					</Col>
 				</Row>
