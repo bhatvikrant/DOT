@@ -1,0 +1,7 @@
+@media screen and (max-width: 768px) {
+	.fair__name {
+		font-size: 20px !important;
+	}
+}
+@media screen and (max-width: 320px) {
+}

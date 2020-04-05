@@ -4,6 +4,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 import Landing from '../components/Landing';
 import UpcomingFairs from '../components/UpcomingFairs';
 import FeaturedFairs from '../components/FeaturedFairs';
+import ContactUsForm from '../components/ContactUsForm';
 const HomePage = () => {
 	return (
 		<div>
@@ -19,6 +20,7 @@ const HomePage = () => {
 						</Col>
 					</Row>
 				</center>
+				<ContactUsForm />
 			</Container>
 		</div>
 	);

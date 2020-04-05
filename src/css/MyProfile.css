@@ -1,0 +1,16 @@
+@media screen and (max-width: 768px) {
+	.user__name {
+		text-align: center;
+	}
+	.data__card {
+		width: 8rem !important;
+	}
+	.update__form {
+		width: 92% !important;
+	}
+}
+@media screen and (max-width: 320px) {
+	.data__card {
+		width: 7rem !important;
+	}
+}
