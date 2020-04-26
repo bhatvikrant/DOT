@@ -43,15 +43,15 @@ class MyProfile extends Component {
 			.then((response) => {
 				console.log('User data log', response);
 				this.setState({
-					name: response.data.user.name ? response.data.user.name : '',
-					email: response.data.user.email ? response.data.user.email : '',
-					address: response.data.user.address ? response.data.user.address : '',
-					mobile: response.data.user.mobile,
-					company: response.data.user.company ? response.data.user.company : '',
-					designation: response.data.user.designation
-						? response.data.user.designation
+					name: response.data.data.user.name ? response.data.data.user.name : '',
+					email: response.data.data.user.email ? response.data.data.user.email : '',
+					address: response.data.data.user.address ? response.data.data.user.address : '',
+					mobile: response.data.data.user.mobile,
+					company: response.data.data.user.company ? response.data.data.user.company : '',
+					designation: response.data.data.user.designation
+						? response.data.data.user.designation
 						: '',
-					about: response.data.user.about ? response.data.user.about : '',
+					about: response.data.data.user.about ? response.data.data.user.about : '',
 				});
 			})
 			.catch((err) => {
@@ -136,7 +136,7 @@ class MyProfile extends Component {
 		return (
 			<div>
 				<br />
-
+				{console.log('STATE', this.state)}
 				<Container>
 					<Row>
 						<Col md={9}>

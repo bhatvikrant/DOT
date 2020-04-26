@@ -22,32 +22,36 @@ const Landing = () => {
 				<Row className='d-inline'>
 					<Col>
 						<h3 className='text-center text-light'>
-							<b>DOT</b> makes your Trade Show visit more efficient.
+							<b>D<span className='primaryYellowColor'>O</span>T</b> makes your Trade Show visit more efficient.
 						</h3>
 					</Col>
 				</Row>
 				<div className='container text-center justify-content'>
 					<Row>
 						<Col align='center' md={4} xs={4}>
-							<h6 className='min__height__60 text-light'>
-								Get Digital Pamphlets
-							</h6>
+
 
 							<div
 								style={{
-									background: 'rgba(0, 0, 0, 0.5)',
-									height: '150px',
-									width: '150px',
+									// background: 'rgba(0, 0, 0, 0.5)',
+									background: 'rgb(255,184,0)',
+									height: '120px',
+									width: '120px',
 								}}
 								className='rounded-circle custom__icon__bg'
 							>
 								<img
 									src={digitalPhamphlets}
 									alt='Get Digital Pamphlets, say no to heavy bags'
-									height='140'
+									height='100'
 									className='custom__icon'
 								/>
 							</div>
+
+							<br />
+							<h6 className='min__height__60 text-light'>
+								Get Digital Pamphlets
+							</h6>
 						</Col>
 
 						<Col align='center' md={4} xs={4}>
@@ -55,16 +59,17 @@ const Landing = () => {
 
 							<div
 								style={{
-									background: 'rgba(0, 0, 0, 0.5)',
-									height: '150px',
-									width: '150px',
+									// background: 'rgba(0, 0, 0, 0.5)',
+									background: 'rgb(255,184,0)',
+									height: '120px',
+									width: '120px',
 								}}
 								className='rounded-circle custom__icon__bg'
 							>
 								<img
 									src={saveExhibitors}
 									alt='Save your Favourite Exhibitors'
-									height='140'
+									height='100'
 									className='custom__icon'
 								/>
 							</div>
@@ -75,25 +80,30 @@ const Landing = () => {
 						</Col>
 
 						<Col align='center' md={4} xs={4}>
-							<h6 className='min__height__60 text-light'>
-								Utilize Contacts at Your Comfort
-							</h6>
 
 							<div
 								style={{
-									background: 'rgba(0, 0, 0, 0.5)',
-									height: '150px',
-									width: '150px',
+									// background: 'rgba(0, 0, 0, 0.5)',
+									background: 'rgb(255,184,0)',
+									height: '120px',
+									width: '120px',
 								}}
 								className='rounded-circle custom__icon__bg'
 							>
 								<img
 									src={utilizeContacts}
 									alt='Utilize Contacts at Your Comfort'
-									height='140'
+									height='100'
 									className='custom__icon'
 								/>
 							</div>
+
+							<br />
+
+							<h6 className='min__height__60 text-light'>
+								Utilize Contacts at Your Comfort
+							</h6>
+
 						</Col>
 					</Row>
 				</div>

@@ -30,7 +30,9 @@ const toolbar = (props) => {
 				<div className='toolbar_navigation-items'>
 					<ul>
 						<li>
-							<NavLink to='/' activeClassName='selected'>
+							<NavLink to='/'
+							// activeClassName='selected'
+							>
 								About Us
 							</NavLink>
 						</li>
@@ -40,7 +42,9 @@ const toolbar = (props) => {
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to='/' activeClassName='selected'>
+							<NavLink to='/'
+							// activeClassName='selected'
+							>
 								Bookmarks
 							</NavLink>
 						</li>

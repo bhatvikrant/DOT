@@ -48,19 +48,17 @@ class LoginModal extends Component {
 						</Dropdown.Toggle>
 
 						<Dropdown.Menu>
-							<Dropdown.Item href='/my-profile'>My Profile</Dropdown.Item>
-							<Dropdown.Item href='/my-bookings'>My Bookings</Dropdown.Item>
-							<Dropdown.Item href='/my-credits'>My Credits</Dropdown.Item>
-							<Dropdown.Item onClick={() => this.props.handleLogout()}>
+							<Dropdown.Item href='/my-profile' className='text-dark'>My Profile</Dropdown.Item>
+							<Dropdown.Item onClick={() => this.props.handleLogout()} className='text-dark'>
 								Logout
 							</Dropdown.Item>
 						</Dropdown.Menu>
 					</Dropdown>
 				) : (
-					<Nav.Link onClick={() => this.props.toggleLoginModal()}>
-						Login / Sign Up
-					</Nav.Link>
-				)}
+						<Nav.Link onClick={() => this.props.toggleLoginModal()}>
+							Login / Sign Up
+						</Nav.Link>
+					)}
 				<Modal
 					show={this.props.loginState.showLoginModal}
 					onHide={this.props.toggleLoginModal}
@@ -121,12 +119,12 @@ class LoginModal extends Component {
 									{this.state.resendOtpTimer > 0 ? (
 										<p>{this.state.resendOtpTimer + ' seconds'}</p>
 									) : (
-										<button className='btn btn-link'>
-											<p onClick={(e) => this.props.generateOTP(e)}>
-												Resend OTP
+											<button className='btn btn-link'>
+												<p onClick={(e) => this.props.generateOTP(e)}>
+													Resend OTP
 											</p>
-										</button>
-									)}
+											</button>
+										)}
 								</div>
 							</div>
 						</div>
