@@ -1,9 +1,16 @@
 import React from 'react';
-import logo from '../../../../assets/logoBGBlue.png';
+
+// CSS
+import './SideDrawer.css';
+
+// 3rd party libraries
 import { Container, Row, Col } from 'react-bootstrap';
 
-import './SideDrawer.css';
-// import LoginModal from '../../../LoginModal';
+// Images
+import logo from '../../../../assets/logoBGBlue.png';
+
+// Components
+import LoginModal from '../../../LoginModal';
 
 import { Link } from 'react-router-dom';
 
@@ -27,25 +34,34 @@ const sideDrawer = (props) => {
 					<Link to='/about'>About Us</Link>
 				</li>
 				<li>
-					<Link to='/all-fairs'>Fairs</Link>
+					<Link to='/fairs'>Fairs</Link>
 				</li>
 				<li>
 					<Link to='/bookmarks'>Bookmarks</Link>
 				</li>
 				<li>
-					<a href='' target='_blank' rel='noopener noreferrer'>
+					<a
+						href='https://dotfair.blogspot.com/'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
 						Blog
 					</a>
 				</li>
 				<li>
 					<Link to='/'>Contact Us</Link>
 				</li>
+
 				<li>
-					<Link to='/register-as-cook'>Login</Link>
+					<LoginModal
+						loginState={props.loginState}
+						toggleLoginModal={props.toggleLoginModal}
+						generateOTP={props.generateOTP}
+						handleLoginInputChange={props.handleLoginInputChange}
+						handleOtpSubmit={props.handleOtpSubmit}
+						handleLogout={props.handleLogout}
+					/>
 				</li>
-				{/* <li>
-					<LoginModal state={props.loginState} setState={props.setLoginState} />
-				</li> */}
 			</ul>
 		</nav>
 	);

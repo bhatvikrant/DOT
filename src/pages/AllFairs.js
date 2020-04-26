@@ -1,77 +1,142 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { BASE_URL } from '../config';
 
+// 3rd party libraries
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { css } from '@emotion/core';
+import ScaleLoader from 'react-spinners/ScaleLoader';
 
+// Images
 import testImg from '../assets/landingImg.jpg';
 
-const AllFairs = () => {
-	return (
-		<div className='container py-4'>
-			<Row>
-				<Col>
-					<div className='card'>
-						<div className='card-body shadow rounded'>
-							<Row>
-								<Col md={3} sm={3}>
-									<img src={testImg} alt='fair' height='100%' width='100%' />
-								</Col>
-								<Col md={6} sm={6}>
-									<Row>
-										<Col>
-											<h6 className='font-weight-bold'>
-												Art of Business Storytelling for Leaders!
-											</h6>
-										</Col>
-									</Row>
-									<Row>
-										<Col>
-											<h6>
-												<b>Venue:</b> Habitat World at India Habitat Centre, New
-												Delhi, India
-											</h6>
-										</Col>
-									</Row>
-									<Row>
-										<Col>
-											<h6>
-												<b>Date:</b> 03 Apr 2020
-											</h6>
-										</Col>
-									</Row>
-									<Row>
-										<Col md={6}>
-											<Link to='/'>Book tickets</Link>
-										</Col>
-										<Col md={6}>
-											<Link to='/'>View Details</Link>
-										</Col>
-									</Row>
-								</Col>
-								<Col md={3}>
-									<Row>
-										<Col align='right'>
-											<h6 className='badge-info d-inline rounded p-2'>
-												Education & Training
-											</h6>
-										</Col>
-									</Row>
-								</Col>
-							</Row>
-						</div>
-						<div className='card-footer py-1'>
-							<h6
-								className='font-weight-light m-0'
-								style={{ fontSize: '14px' }}
-							>
-								Conect after event for new Upcoming shows
-							</h6>
-						</div>
+// CSS For loader
+const override = css`
+	display: block;
+	margin: 0 auto;
+	border-color: red;
+`;
+
+class AllFairs extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			fairs: [],
+			loading: false,
+		};
+	}
+
+	fetchFairs = () => {
+		this.setState({ loading: true });
+		axios
+			.get(`${BASE_URL}/fairs`)
+			.then((response) => {
+				console.log('all fairs', response.data.data.fairs);
+				this.setState({ fairs: response.data.data.fairs, loading: false });
+			})
+			.catch((err) => {
+				console.log(err);
+			});
+	};
+	componentDidMount() {
+		this.fetchFairs();
+	}
+	render() {
+		return (
+			<div className='container py-4'>
+				{this.state.loading ? (
+					<div
+						className='text-center my-5'
+						style={{ minHeight: '100vh', textAlign: 'center' }}
+					>
+						<ScaleLoader
+							css={override}
+							size={150}
+							color={'#3368e8'}
+							loading={true}
+						/>
 					</div>
-				</Col>
-			</Row>
-		</div>
-	);
-};
+				) : (
+					''
+				)}
+
+				{this.state.fairs.map((fair) => (
+					<Row className='mb-4' key={fair.id}>
+						<Col>
+							<div className='card'>
+								<div className='card-body shadow rounded'>
+									<Row>
+										<Col md={3} sm={3}>
+											<img
+												src={fair.image_link || testImg}
+												alt={fair.name}
+												height='100%'
+												width='100%'
+											/>
+										</Col>
+										<Col md={6} sm={6}>
+											<Row>
+												<Col>
+													<h6 className='font-weight-bold'>{fair.name}</h6>
+												</Col>
+											</Row>
+											<Row>
+												<Col>
+													<h6>
+														<b>Venue:</b> {fair.venue}
+													</h6>
+												</Col>
+											</Row>
+											<Row>
+												<Col>
+													<h6>
+														<b>Date:</b> {fair.date}
+													</h6>
+												</Col>
+											</Row>
+											<Row>
+												<Col md={6}>
+													<a
+														href={fair.book_tickets_link}
+														target='_blank'
+														rel='noopener noreferrer'
+													>
+														Book tickets
+													</a>
+												</Col>
+												<Col md={6}>
+													<Link to={`fair/${fair.id}`}>View Details</Link>
+												</Col>
+											</Row>
+										</Col>
+										<Col md={3}>
+											<Row>
+												<Col align='right'>
+													<h6 className='badge-info d-inline rounded p-2'>
+														{fair.category}
+													</h6>
+												</Col>
+											</Row>
+										</Col>
+									</Row>
+								</div>
+								<div className='card-footer py-1'>
+									<h6
+										className='font-weight-light m-0'
+										style={{ fontSize: '14px' }}
+									>
+										Conect after event for new Upcoming shows
+									</h6>
+								</div>
+							</div>
+						</Col>
+					</Row>
+				))}
+			</div>
+		);
+	}
+}
 
 export default AllFairs;

@@ -8,10 +8,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	return (
-		<footer
-			className='text-center p-4 primaryBlueColor'
-			// style={{ backgroundColor: '#2c3e50' }}
-		>
+		<footer className='text-center p-4 primaryBlueColor'>
 			<Row>
 				<Col md={4}>
 					<center>
@@ -65,7 +62,7 @@ const Footer = () => {
 					<Row>
 						<Col className='p-3'>
 							<SocialIcon
-								url='https://www.linkedin.com/in/dot-digitally-optimized-trade-515300169'
+								url='https://www.linkedin.com/in/dot-fairs-515300169/'
 								bgColor='#ecf0f1'
 								target='_blank'
 							/>
@@ -107,17 +104,35 @@ const Footer = () => {
 					</center>
 					<Row>
 						<Col>
-							<h6 className='btn btn-link text-light'>dotfairs@gmail.com</h6>
+							<a
+								href='mailto:dotfairs@gmail.com'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<h6 className='btn btn-link text-light'>dotfairs@gmail.com</h6>
+							</a>
 						</Col>
 					</Row>
 					<Row>
 						<Col>
-							<h6 className='btn btn-link text-light'>+91-8178452370</h6>
+							<a
+								href='tel:+91-8178452370'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<h6 className='btn btn-link text-light'>+91-8178452370</h6>
+							</a>
 						</Col>
 					</Row>
 					<Row>
 						<Col>
-							<h6 className='btn btn-link text-light'>+91-9911744311</h6>
+							<a
+								href='tel:+91-9911744311'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<h6 className='btn btn-link text-light'>+91-9911744311</h6>
+							</a>
 						</Col>
 					</Row>
 				</Col>
@@ -125,7 +140,7 @@ const Footer = () => {
 			<hr />
 			<Row>
 				<Col>
-					<h6>Copyright © 2019 DOT - All Rights Reserved.</h6>
+					<h6>Copyright © 2020 DOTF - All Rights Reserved.</h6>
 				</Col>
 			</Row>
 		</footer>

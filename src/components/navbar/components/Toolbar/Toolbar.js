@@ -1,15 +1,19 @@
 import React from 'react';
-// import logo from '../../../../assets/images/photo.jpg';
-// import LoginModal from '../../../LoginModal';
 
-import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
-import logo from '../../../../assets/logoBGBlue.png';
+// CSS
 import './Toolbar.css';
+
+// Images
+import logo from '../../../../assets/logoBGBlue.png';
+
+// Components
+import LoginModal from '../../../LoginModal';
+import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 
 import { Link, NavLink } from 'react-router-dom';
 
 const toolbar = (props) => {
-	// console.log('TOOLBAR PROPS', props);
+	console.log('TOOLBAR PROPS', props);
 	return (
 		<header className='toolbar'>
 			<nav className='toolbar__navigation'>
@@ -20,28 +24,32 @@ const toolbar = (props) => {
 				</div>
 				<div className='toolbar__logo'>
 					<Link to='/'>
-						<span className='logoName'>DOTF</span>
+						<span className='logoName'>DOT Fairs</span>
 					</Link>
 				</div>
 				<div className='toolbar_navigation-items'>
 					<ul>
 						<li>
-							<NavLink to='/about' activeClassName='selected'>
+							<NavLink to='/' activeClassName='selected'>
 								About Us
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to='/all-fairs' activeClassName='selected'>
+							<NavLink to='/fairs' activeClassName='selected'>
 								Fairs
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to='/bookmarks' activeClassName='selected'>
+							<NavLink to='/' activeClassName='selected'>
 								Bookmarks
 							</NavLink>
 						</li>
 						<li>
-							<a href='/' target='_blank' rel='noopener noreferrer'>
+							<a
+								href='https://dotfair.blogspot.com/'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
 								Blog
 							</a>
 						</li>
@@ -53,17 +61,21 @@ const toolbar = (props) => {
 				<div className='spacer' />
 				<div className='toolbar_navigation-items'>
 					<ul>
-						<li>
+						{/* <li>
 							<NavLink to='/register-as-cook' activeClassName='selected'>
 								Login
 							</NavLink>
-						</li>
-						{/* <li>
-							<LoginModal
-								state={props.loginState}
-								setState={props.setLoginState}
-							/>
 						</li> */}
+						<li>
+							<LoginModal
+								loginState={props.loginState}
+								toggleLoginModal={props.toggleLoginModal}
+								generateOTP={props.generateOTP}
+								handleLoginInputChange={props.handleLoginInputChange}
+								handleOtpSubmit={props.handleOtpSubmit}
+								handleLogout={props.handleLogout}
+							/>
+						</li>
 					</ul>
 				</div>
 				<div className='toolbar__toggle-button'>
