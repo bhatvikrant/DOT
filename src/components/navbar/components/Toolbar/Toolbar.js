@@ -22,16 +22,22 @@ const toolbar = (props) => {
 						<img src={logo} alt='logo' height='80' width='80' />
 					</Link>
 				</div>
-				<div className='toolbar__logo'>
-					<Link to='/'>
-						<span className='logoName'>DOT Fairs</span>
+				<div className=''>
+					{/* toolbar__logo */}
+					<Link to='/' className='text-decoration-none'>
+						<span className='text-light '>
+							<b className='text-light mb-0'>DOT</b> Fairs
+						</span>
+						{/* <h5 className='text-light mb-0'><b>DOT</b> Fairs</h5> */}
+						{/* logoname */}
 					</Link>
 				</div>
 				<div className='toolbar_navigation-items'>
 					<ul>
 						<li>
-							<NavLink to='/'
-							// activeClassName='selected'
+							<NavLink
+								to='/'
+								// activeClassName='selected'
 							>
 								About Us
 							</NavLink>
@@ -42,8 +48,9 @@ const toolbar = (props) => {
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to='/'
-							// activeClassName='selected'
+							<NavLink
+								to='/'
+								// activeClassName='selected'
 							>
 								Bookmarks
 							</NavLink>

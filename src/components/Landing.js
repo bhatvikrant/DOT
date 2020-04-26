@@ -43,7 +43,7 @@ const Landing = () => {
 								<img
 									src={digitalPhamphlets}
 									alt='Get Digital Pamphlets, say no to heavy bags'
-									height='100'
+									height='110'
 									className='custom__icon'
 								/>
 							</div>
@@ -69,13 +69,13 @@ const Landing = () => {
 								<img
 									src={saveExhibitors}
 									alt='Save your Favourite Exhibitors'
-									height='100'
+									height='110'
 									className='custom__icon'
 								/>
 							</div>
 							<br />
 							<h6 className='min__height__60 text-light'>
-								Save your Favourite Exhibitors
+								Save your Exhibitors
 							</h6>
 						</Col>
 
@@ -93,15 +93,16 @@ const Landing = () => {
 								<img
 									src={utilizeContacts}
 									alt='Utilize Contacts at Your Comfort'
-									height='100'
+									height='110'
 									className='custom__icon'
+
 								/>
 							</div>
 
 							<br />
 
 							<h6 className='min__height__60 text-light'>
-								Utilize Contacts at Your Comfort
+								Utilize your Contacts
 							</h6>
 
 						</Col>

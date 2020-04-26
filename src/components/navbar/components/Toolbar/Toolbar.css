@@ -16,7 +16,7 @@
 }
 
 .toolbar__logo {
-	margin-left: 1rem;
+	/* margin-left: 1rem; */
 }
 
 .toolbar__logo a {
@@ -25,14 +25,14 @@
 
 	text-decoration: none !important;
 	font-size: 30px;
-	color: #ffb800;
+	color: white;
 }
 
 .toolbar__logo :hover {
-	color: #ffb800;
+	color: white;
 }
 .toolbar__logo a :hover {
-	color: #ffb800;
+	color: white;
 }
 
 .logoName {
@@ -40,11 +40,11 @@
 
 	text-decoration: none !important;
 	font-size: 30px;
-	color: #ffb800;
+	color: white;
 }
 
 .logoName :hover {
-	color: #ffb800;
+	color: white;
 }
 
 .spacer {
