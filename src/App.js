@@ -21,6 +21,9 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import ScrollToTop from './ScrollToTop';
 
+// TEMP
+import TempStaticFair from './pages/TempStaticFair';
+
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -250,6 +253,7 @@ class App extends Component {
 				/>
 				<Switch>
 					<Route exact path='/' component={HomePage} />
+					<Route exact path='/fair-temp/webinar' component={TempStaticFair} />
 					<Route exact path='/fair/:fairID' component={Fair} />
 					<Route exact path='/fairs' component={AllFairs} />
 					{access_token === null ? (
