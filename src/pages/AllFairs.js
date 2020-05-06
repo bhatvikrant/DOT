@@ -87,7 +87,7 @@ class AllFairs extends Component {
 												<Row>
 													<Col>
 														<h6>
-															<b>Venue:</b> Online Webinar
+															<b>Venue:</b> Zoom Webinar
 														</h6>
 													</Col>
 												</Row>

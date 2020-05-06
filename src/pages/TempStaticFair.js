@@ -49,7 +49,7 @@ class TempStaticFair extends Component {
 						</Row>
 						<Row>
 							<Col>
-								<h6 className='text-light'>Online Webinar</h6>
+								<h6 className='text-light'>Zoom Webinar</h6>
 							</Col>
 						</Row>
 					</Container>
