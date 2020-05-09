@@ -154,18 +154,24 @@ class TempStaticFair extends Component {
 					<p>
 						The COVID19 vs Fashion Industry webinar is here to help you set your
 						business strategy with confidence, using exclusive insights from our
-						five seasoned industry leader, Mr Anand Singh.
+						seasoned industry leaders.
 					</p>
 
-					<p>
-						Mr. Anand Singh is Principle Consultant at India Bridal Fashion Week
-						(IBFW.com) & Inventor at Sketch to Reality, an AR based Luxury
-						Online Store, he will discuss about the financial losses that the
-						fashion industry has faced and how we can rise above it after the
-						pandemic ends.  
-					</p>
+					<p>Panelists:</p>
+					<ul>
+						<li>
+							Mr. Anand Singh, He was the Director at Indian Bridal Fashion Week
+							(IBFW), currently COO of Pernia's Pop-Up Shop , CEO at Little Tags
+							& SketchToReality.com.
+						</li>
+						<li>
+							Mr. Vineet Tyagi, He is Business Development Manager of Northern
+							India Textile Research Association (Linked to Ministry of
+							Textiles, Government of India).
+						</li>
+					</ul>
 
-					<p>Other topics that will be covered in Webinar</p>
+					<p>Topics that will be covered in Webinar</p>
 
 					<ul>
 						<li>Economic Impact of COVID-19 on the fashion Industry.</li>
